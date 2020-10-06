@@ -15,7 +15,7 @@
 <!-- /wp:quote -->
 
 <!-- wp:paragraph -->
-<p><strong>So whats the big deal?</strong></p>
+<p><strong>So what's the big deal?</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -35,11 +35,19 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Swift has many advantages when developing, some of these include uninitialised variable prevention, overflow checking and automated memory management thanks to <a href="https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html">ARC</a>. As well as this, the language design and syntax promote <em>swift </em>(fast) development with high maintainability and readability. Swift being a young language, it still has a lot of ways to go and will continuously see improvements to its performance and feature base.</p>
+<p>Swift has many advantages when developing, some of these include uninitialised variable prevention, overflow checking, and automated memory management thanks to <a href="https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html">ARC</a>. As well as this, the language design and syntax promote <em>swift </em>(fast) development with high maintainability and readability. Swift being a young language, it still has a lot of ways to go and will continuously see improvements to its performance and feature base.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>You can read up on the language itself and look into the pros and cons. But one of the main advantages of building in Swift for server-side and full-stack is the reusability of code across your mobile, web and server-side developments, this allows for sharing of business logic, models and validation across your project. This also enables language familiarity across your codebase to promote work in a cross-functional development team. </p>
+<p>You can read up on the language itself and look into the pros and cons. But one of the main advantages of building in Swift for server-side and full-stack is the reusability of code across your mobile, web, and server-side developments, this allows for the sharing of business logic, models, and validation across your project. This also enables language familiarity across your codebase to promote work in a cross-functional development team. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Another big advantage is if you are already an experienced iOS developer the transition to developing APIs and backend services for your application is seamless, with no need to learn a new language. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The transition from other languages such as JavaScript, TypeScript, Kotlin, etc. is also very simple as the language is designed for fast development and it is easy to learn, sharing a lot in common with those aforementioned </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -47,7 +55,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Vapor is a web framework built for server-side Swift development. It's built on Apple's SwiftNIO: a non-blocking, event-driven architecture written in Swift which encourages type-safe, expressive and protocol-oriented development. </p>
+<p>Vapor is a web framework built for server-side Swift development. It's built on Apple's SwiftNIO: a non-blocking, event-driven architecture written in Swift which encourages type-safe, expressive, and protocol-oriented development. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -83,9 +91,13 @@
 brew install vapor 
 
 # linux
-eval $(curl -sL https://apt.vapor.sh) 
-sudo apt-get update 
-sudo apt-get install vapor</code></pre>
+git clone https://github.com/vapor/toolbox.git
+cd toolbox
+git checkout &lt;desired version>
+make install
+
+# commands
+vapor --help</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
@@ -368,7 +380,11 @@ class ProductService {
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>There are two methods in this service, one which we will use to return all the products that our store contains, and the other to return a product by its ID. These two methods match up with our current routes.<br><strong>Registering our service</strong></p>
+<p>There are two methods in this service, one which we will use to return all the products that our store contains, and the other to return a product by its ID. These two methods match up with our current routes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><br><strong>Registering our service</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -406,7 +422,7 @@ extension Application {
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Lastly, before we hook everything up and can start responding back with products for our API, we must write an extension to serialise the list of our products to a JSON string. Open the Product.swift file and at the end of the file add the following extension.</p>
+<p>Lastly, before we hook everything up and can start responding with products for our API, we must write an extension to serialise the list of our products to a JSON string. Open the Product.swift file and at the end of the file add the following extension.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -589,7 +605,7 @@ app.get(Constants.Endpoints.products.path,
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>For example: <code>/products/</code>1 you should see the following response:</p>
+<p>For example: <code>/products/1</code> you should see the following response:</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -607,4 +623,16 @@ app.get(Constants.Endpoints.products.path,
 
 <!-- wp:paragraph -->
 <p><br><em>Next:</em> <strong>Swift Stack: Swift Frontend using SwiftWebUI and Server-Side Swift (Part Two)</strong><br>In the next part, we will look at building a web frontend for our shop, again using Swift and the <a href="https://github.com/SwiftWebUI/SwiftWebUI" data-type="URL" data-id="https://github.com/SwiftWebUI/SwiftWebUI">SwiftWebUI</a> framework. We will be consuming these APIs for displaying our products in our application.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2> </h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The <strong>source code</strong> for this tutorial is available at: <a href="https://gitlab.com/justinwilkin/server-side-swift-tutorial-part-1">https://gitlab.com/justinwilkin/server-side-swift-tutorial-part-1</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
 <!-- /wp:paragraph -->
