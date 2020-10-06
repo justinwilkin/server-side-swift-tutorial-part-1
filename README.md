@@ -625,14 +625,6 @@ app.get(Constants.Endpoints.products.path,
 <p><br><em>Next:</em> <strong>Swift Stack: Swift Frontend using SwiftWebUI and Server-Side Swift (Part Two)</strong><br>In the next part, we will look at building a web frontend for our shop, again using Swift and the <a href="https://github.com/SwiftWebUI/SwiftWebUI" data-type="URL" data-id="https://github.com/SwiftWebUI/SwiftWebUI">SwiftWebUI</a> framework. We will be consuming these APIs for displaying our products in our application.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2> </h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>The <strong>source code</strong> for this tutorial is available at: <a href="https://gitlab.com/justinwilkin/server-side-swift-tutorial-part-1">https://gitlab.com/justinwilkin/server-side-swift-tutorial-part-1</a></p>
-<!-- /wp:paragraph -->
-
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->
