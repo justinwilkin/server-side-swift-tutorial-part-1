@@ -14,7 +14,7 @@ func routes(_ app: Application) throws {
         // Return a serialised list of products
         return .init(status: .ok,
                      version: req.version,
-                     headers: ["Content-Type": "text/json; charset=utf-8"],
+                     headers: ["Content-Type": "application/json"],
                      body: .init(string: products.codableArrayAsJsonString()))
     }
     
@@ -34,14 +34,14 @@ func routes(_ app: Application) throws {
         if let product = app.productService.getProductById(id: productId) {
             return .init(status: .ok,
                          version: req.version,
-                         headers: ["Content-Type": "text/json; charset=utf-8"],
+                         headers: ["Content-Type": "application/json"],
                          body: .init(string: product.asJsonString()))
         }
         
         // Return no product found
         return .init(status: .notFound,
                      version: req.version,
-                     headers: ["Content-Type": "text/json; charset=utf-8"],
+                     headers: ["Content-Type": "application/json"],
                      body: .init(string: "No product found."))
     }
 }
