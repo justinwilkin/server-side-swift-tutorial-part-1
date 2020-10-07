@@ -47,7 +47,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The transition from other languages such as JavaScript, TypeScript, Kotlin, etc. is also very simple as the language is designed for fast development and it is easy to learn, sharing a lot in common with those aforementioned </p>
+<p>The transition from other languages such as JavaScript, TypeScript, Kotlin, etc. is also very simple as the language is designed for fast development and it is easy to learn, sharing a lot in common with those aforementioned. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -622,9 +622,5 @@ app.get(Constants.Endpoints.products.path,
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><br><em>Next:</em> <strong>Swift Stack: Swift Frontend using SwiftWebUI and Server-Side Swift (Part Two)</strong><br>In the next part, we will look at building a web frontend for our shop, again using Swift and the <a href="https://github.com/SwiftWebUI/SwiftWebUI" data-type="URL" data-id="https://github.com/SwiftWebUI/SwiftWebUI">SwiftWebUI</a> framework. We will be consuming these APIs for displaying our products in our application.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p></p>
+<p><br><em>Next:</em> <strong>Swift Stack: Be a Full Stack Swift Developer (Part Two)</strong><br>In the next part, we will look at building a web frontend for our shop, again using Swift and the <a href="https://github.com/SwiftWebUI/SwiftWebUI" data-type="URL" data-id="https://github.com/SwiftWebUI/SwiftWebUI">SwiftWebUI</a> framework. We will be consuming these APIs for displaying our products in our application.</p>
 <!-- /wp:paragraph -->
