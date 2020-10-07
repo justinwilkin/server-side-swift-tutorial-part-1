@@ -488,7 +488,7 @@ app.get(Constants.Endpoints.products.path) {
              version: req.version,
              headers: &#91;
                "Content-Type": 
-               "text/json; charset=utf-8"
+               "application/json"
              ],
              body: 
                .init(string:
@@ -535,7 +535,7 @@ app.get(Constants.Endpoints.products.path,
                      version: req.version,
                      headers: &#91;
                        "Content-Type": 
-                       "text/json; charset=utf-8"],
+                       "application/json"],
                      body: 
                       .init(
                         string: product.asJsonString()
@@ -547,7 +547,7 @@ app.get(Constants.Endpoints.products.path,
              version: req.version,
              headers: &#91;
                "Content-Type": 
-               "text/json; charset=utf-8"
+               "application/json"
              ],
              body: .init(string: "No product found."))
     }</code></pre>
